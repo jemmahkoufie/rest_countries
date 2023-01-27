@@ -1,10 +1,10 @@
-import { React,useState,useEffect } from "react";
+import { React,useState} from "react";
 
-import { BrowserRouter as Router ,Routes,Route,Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+//import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 
 export function HomeComponent(props) {
@@ -14,7 +14,7 @@ export function HomeComponent(props) {
     const [filteredCountries,setFilteredCountries]=useState(props.allCountries)
     //DataSource
   const regions=['Africa','Americas','Asia','Europe','Oceania']
-  const [selectedRegion, setSelectedRegion] = useState('')
+  //const [selectedRegion, setSelectedRegion] = useState('')
   
   
   const handleRegionChange=({target})=>{

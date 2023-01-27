@@ -1,7 +1,7 @@
 import './App.css';
 import {useState,useEffect} from 'react'
 import axios from 'axios'
-import { BrowserRouter as Router ,Routes,Route,Link} from 'react-router-dom'
+import { BrowserRouter as Router ,Routes,Route} from 'react-router-dom'
 import {CountryDetail}from './components/CountryDetail'
 import { HomeComponent } from './components/HomeComponent';
 import { Nav } from './components/Nav';

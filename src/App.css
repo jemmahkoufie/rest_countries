@@ -1,1 +1,481 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito Sans', 'sans-serif';
+}
+
+.content-wrapper {
+  max-width: 1440px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: calc(100vh - 3.5rem);
+}
+
+.backButton {
+  margin: 40px 20px 40px 0px;
+}
+
+.backButton button {
+  padding: 10px 30px;
+}
+
+.backButton svg {
+  margin-right: 0.5rem !important;
+}
+
+.borderCountry {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 415px) {
+  .borderCountry {
+    margin-top: 30px;
+  }
+}
+
+.borderCountry i {
+  text-decoration: none;
+  font-style: unset;
+}
+
+@media screen and (max-width: 415px) {
+  .borderCountry i {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.borderCountry span {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 415px) {
+  .borderCountry span {
+    margin: 0;
+  }
+}
+
+.borderCountry button {
+  margin: 2.5px;
+}
+
+button {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 5px #c7c7c7;
+          box-shadow: 1px 1px 5px #c7c7c7;
+}
+
+.nav-container {
+  width: 100%;
+  background: #fff;
+  height: 3.5rem;
+  -webkit-box-shadow: 0.5px 0.5px 5px #dedede;
+          box-shadow: 0.5px 0.5px 5px #dedede;
+}
+
+@media screen and (max-width: 415px) {
+  .nav-container {
+    height: 4.5rem;
+  }
+}
+
+.themeMode {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 415px) {
+  .themeMode {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+.themeMode svg {
+  margin-right: 0.5rem;
+}
+
+.countryDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  gap: 80px;
+}
+
+@media screen and (max-width: 415px) {
+  .countryDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .countryDetails .countryImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.countryDetails .countryName {
+  margin-bottom: 1.3rem;
+  font-size: 0.9rem;
+}
+
+.countryDetails .countryDetails {
+  height: 200px;
+}
+
+.countryDetails .countryDetails img {
+  height: auto;
+}
+
+.countryDetails p {
+  font-weight: 600;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.countryDetails p span {
+  font-weight: 400;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 415px) {
+  nav h1 {
+    font-size: 1rem;
+  }
+}
+
+.filterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 415px) {
+  .filterContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.filterContainer input,
+.filterContainer select {
+  position: relative;
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  border: 0px;
+  border-radius: 5px;
+  color: #858585;
+  -webkit-box-shadow: 1px 1px 3px #e0e0e0;
+          box-shadow: 1px 1px 3px #e0e0e0;
+}
+
+.filterContainer input option,
+.filterContainer select option {
+  line-height: 2rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #858585;
+}
+
+.filterContainer input {
+  padding-left: 4rem;
+}
+
+@media screen and (max-width: 415px) {
+  .filterContainer input {
+    width: 100%;
+  }
+}
+
+.filterContainer .regionFilter {
+  min-width: 300px;
+  text-align: right;
+}
+
+@media screen and (max-width: 415px) {
+  .filterContainer .regionFilter {
+    text-align: left;
+  }
+}
+
+.filterContainer .regionFilter select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative !important;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(-227deg, gray 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 4px 5px, 5px 7px;
+  background-repeat: no-repeat;
+}
+
+.filterContainer .regionFilter svg {
+  color: red;
+}
+
+.filterContainer .searchFilter {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.filterContainer .searchFilter svg {
+  position: absolute;
+  z-index: 2;
+  padding: 0.7rem 1.5rem;
+  color: #858585;
+}
+
+body {
+  color: #111517;
+  background-color: #fafafa;
+}
+
+.countryContainer {
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4%;
+}
+
+@media screen and (max-width: 415px) {
+  .countryContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.countryContainer a {
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  color: #111517;
+  width: 22%;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 5px #e2e2e2;
+          box-shadow: 1px 1px 5px #e2e2e2;
+}
+
+@media screen and (max-width: 415px) {
+  .countryContainer a {
+    width: 100%;
+  }
+}
+
+.countryCard .countryFlag {
+  width: 100%;
+  height: 160px;
+}
+
+.countryCard .countryFlag img {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.countryCard h3 {
+  font-size: 1rem;
+  line-height: 26px;
+  font-weight: 800;
+}
+
+.countryCard p {
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+}
+
+.countryCard p span {
+  font-weight: 300;
+}
+
+.countryCard .countryName,
+.countryCard .countryDescription {
+  margin: 10px 20px;
+  display: block;
+}
+
+.countryDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 415px) {
+  .countryDescription {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.darktheme {
+  background: #202c37;
+  color: #fff;
+}
+
+.darktheme .nav-container {
+  background: #2b3945;
+  -webkit-box-shadow: 0.5px 0.5px 5px #242424;
+          box-shadow: 0.5px 0.5px 5px #242424;
+}
+
+.darktheme .nav-container .themeMode svg {
+  fill: white;
+}
+
+.darktheme .countryContainer a {
+  color: white;
+  background: #2b3945;
+  -webkit-box-shadow: 0.5px 0.5px 5px #242424;
+          box-shadow: 0.5px 0.5px 5px #242424;
+}
+
+.darktheme .searchFilter input {
+  background: #2b3945;
+  color: white;
+  -webkit-box-shadow: 0.5px 0.5px 5px #242424;
+          box-shadow: 0.5px 0.5px 5px #242424;
+}
+
+.darktheme .searchFilter input::-webkit-input-placeholder {
+  color: #c9c9c9;
+}
+
+.darktheme .searchFilter input:-ms-input-placeholder {
+  color: #c9c9c9;
+}
+
+.darktheme .searchFilter input::-ms-input-placeholder {
+  color: #c9c9c9;
+}
+
+.darktheme .searchFilter input::placeholder {
+  color: #c9c9c9;
+}
+
+.darktheme .regionFilter select {
+  background: #2b3945;
+  color: #c9c9c9;
+  -webkit-box-shadow: 0.5px 0.5px 5px #242424;
+          box-shadow: 0.5px 0.5px 5px #242424;
+}
+
+.darktheme .regionFilter select option {
+  color: white;
+}
+
+.darktheme .regionFilter .seleRegion {
+  background-image: linear-gradient(45deg, transparent 50%, #c9c9c9 50%), linear-gradient(-227deg, #c9c9c9 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 4px 5px, 5px 7px;
+  background-repeat: no-repeat;
+}
+
+.darktheme .backButton {
+  margin: 40px 20px 40px 0px;
+}
+
+.darktheme .backButton button {
+  color: white;
+}
+
+.darktheme .backButton svg {
+  fill: white;
+}
+
+.darktheme .borderCountry {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 415px) {
+  .darktheme .borderCountry {
+    margin-top: 30px;
+  }
+}
+
+.darktheme .borderCountry i {
+  text-decoration: none;
+  font-style: unset;
+}
+
+@media screen and (max-width: 415px) {
+  .darktheme .borderCountry i {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.darktheme .borderCountry span {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 415px) {
+  .darktheme .borderCountry span {
+    margin: 0;
+  }
+}
+
+.darktheme .borderCountry button {
+  margin: 2.5px;
+  color: #ffffff;
+}
+
+.darktheme button {
+  background: #2b3945;
+  -webkit-box-shadow: 0.5px 0.5px 5px #242424;
+          box-shadow: 0.5px 0.5px 5px #242424;
+}
+/*# sourceMappingURL=App.css.map */
